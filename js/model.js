@@ -22,7 +22,9 @@
         geofetch: function() {
             var self = this;
             return this.geo().then(function(position) {
-                return self.fetch()
+                return self.fetch().then(function() {
+                    console.log(self)
+                })
             })
         }
     })
@@ -39,9 +41,43 @@
         }
     })
 
-    var m = new Backbone.GeoModel({
+    Backbone.TemplateView = Backbone.View.extend({
+        cache: {},
+        stream: function(url) {
+            var x = $.Deferred();
+            if (this.cache[url]) {
+                x.resolve(cache[url]);
+            } else {
+                $.get(url).then((function(d) {
+                    this.cache[url] = _.template(d);
+                    x.resolve(_.template(d));
+                }).bind(this));
+            }
+            return x;
+        },
+        loadTemplate: function(name) {
+            return this.stream('./templates/' + name + '.html');
+        },
+        initialize: function(options) {
+            this.options = options;
+            this.model && this.model.on("change", this.render.bind(this));
+        },
+        render: function() {
+            var self = this;
+            this.loadTemplate(this.options.view).then(function(fn) {
+                self.model && (self.el.innerHTML = fn(self.model.toJSON()));
+            })
+        }
+    })
+
+    var m = new GeoWeatherModel({
         access_token: "98ac5c9976432c87264125f629576420"
     });
+    var v = new Backbone.TemplateView({
+        el: ".main",
+        model: m,
+        view: "search"
+    })
 
     m.geofetch().then(function(data) {
         data; // { ... } --> data from network request

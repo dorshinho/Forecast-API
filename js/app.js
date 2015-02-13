@@ -13,7 +13,7 @@ function app(){
         {url: "./bower_components/lodash/lodash.min.js"},
         {url: "./bower_components/backbone/backbone.js"},
         {url: "./bower_components/pace/pace.min.js"},
-        {url: "./js/Router.js"}
+        {url: "./js/model.js"}
 
     ).then(function(){
         document.querySelector("html").style.opacity = 1;

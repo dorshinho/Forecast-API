@@ -73,8 +73,9 @@
     var m = new GeoWeatherModel({
         access_token: "98ac5c9976432c87264125f629576420"
     });
+
     var v = new Backbone.TemplateView({
-        el: ".main",
+        el: ".container",
         model: m,
         view: "search"
     })

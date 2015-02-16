@@ -915,9 +915,9 @@ input {
 
 .round:hover {
   background: -webkit-linear-gradient(#35ADC4, #00738A);
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DC143C));
-  background: -webkit-linear-gradient(#FFFFFF, #DC143C);
-  background: linear-gradient(#FFFFFF, #DC143C); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#5591DF));
+  background: -webkit-linear-gradient(#FFFFFF, #5591DF);
+  background: linear-gradient(#FFFFFF, #5591DF); }
 
 a {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -934,8 +934,8 @@ a {
   background: #5591DF; }
 
 .position {
-  text-align: center;
-  margin-top: 42px; }
+  margin-top: 42px;
+  outline: 1px solid red; }
 
 .strip {
   color: #FFF;
@@ -949,4 +949,13 @@ a {
   display: block;
   margin-top: -12px;
   padding: 0; }
+
+.container {
+  outline: solid 1px red;
+  width: 25%; }
+
+.london {
+  text-align: center;
+  margin-top: 42px;
+  outline: 1px solid red; }
 

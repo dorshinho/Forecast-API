@@ -1,0 +1,7 @@
+<ul>
+    <li>Latitude: <%= position.coords.latitude %> </li>
+    <li>Longitude: <%= position.coords.longitude %> </li>
+    <li>Timezone: <%= timezone %> </li>
+    <li>Temperature: <%= currently.temperature %> </li>
+    <li>Humidity: <%= currently.humidity %> </li>
+</ul>

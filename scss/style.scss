@@ -113,7 +113,7 @@ h2 {
  }
  .round:hover {
      background: -webkit-linear-gradient(#35ADC4, #00738A);
-     background: linear-gradient(#FFFFFF, #DC143C);
+     background: linear-gradient(#FFFFFF, #5591DF);
  }
 
 
@@ -134,8 +134,9 @@ text-align: center;
 background: #5591DF;
 }
 .position {
-    text-align: center;
+    // text-align: center;
     margin-top: 42px;
+    outline: 1px solid red;
 }
 
 .strip {
@@ -150,4 +151,14 @@ background-color: #111;
 display: block;
 margin-top: -12px;
 padding: 0;
+}
+.container {
+    outline: solid 1px red;
+    width: 25%;
+}
+.london {
+    text-align: center;
+    margin-top: 42px;
+    outline: 1px solid red;
+
 }

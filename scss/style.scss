@@ -78,3 +78,76 @@ img {max-width:100%;}
 body {
     transition: opacity .25s ease;
 }
+h2 {
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+     font-weight: 300;
+     color: #FFFFFF;
+     display: inline-block;
+     margin-top: 25px;
+     margin-left: 15px;
+ }
+ form {
+     display: inline-block;
+     margin-left: 25px;
+ }
+ input {
+     border: 5px solid white;
+     -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+     padding: 15px;
+     background: rgba(255, 255, 255, 0.5);
+     margin: 0 0 10px 0;
+ }
+ .round {
+     padding: 10px 15px;
+     margin: 20px auto;
+     color: #FFFFFF;
+     background-color: #5591DF;
+     border: 0 none;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     border-radius: 20px;
+     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+     cursor: pointer;
+ }
+ .round:hover {
+     background: -webkit-linear-gradient(#35ADC4, #00738A);
+     background: linear-gradient(#FFFFFF, #DC143C);
+ }
+
+
+ a {
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+     font-weight: 300;
+     color: #FF7373;
+ }
+
+
+.main {
+position: relative;
+width: 100%;
+height: 105px;
+padding: 10px 0 6px;
+z-index: 3000;
+text-align: center;
+background: #5591DF;
+}
+.position {
+    text-align: center;
+    margin-top: 42px;
+}
+
+.strip {
+color: #FFF;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-weight: 400;
+overflow-y: scroll;
+width: 100%;
+height: 40px;
+text-align: center;
+background-color: #111;
+display: block;
+margin-top: -12px;
+padding: 0;
+}
